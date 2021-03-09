@@ -2,7 +2,7 @@ import os
 from flask import Flask, request, abort, jsonify, send_from_directory
 from werkzeug.utils import secure_filename
 
-UPLOAD_DIRECTORY = "/uploads"
+UPLOAD_DIRECTORY = "./uploads"
 
 if not os.path.exists(UPLOAD_DIRECTORY):
     os.makedirs(UPLOAD_DIRECTORY)
